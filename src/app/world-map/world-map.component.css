@@ -1,0 +1,66 @@
+/* Section container */
+section {
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* SVG resizing */
+svg {
+    width: 80%;
+}
+
+/* Path transition for hover*/
+path {
+    transition: fill 0.2s ease-in-out;
+}
+
+/* Path coloring on hover*/
+path:hover {
+    fill: #E2AE20;
+}
+
+/* Styling for div elements inside the section */
+section div {
+    display: flex;
+    justify-content: center;
+}
+
+/* Flex properties for the div directly inside the section */
+section>div {
+    flex: 1 1 70%;
+}
+
+/* Styling for the countryInformation class */
+.countryInformation {
+    flex: 1 1 auto;
+    margin: 0 20px;
+    padding: 0 20px;
+    background-color: #E2AE20;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* Centering h2 text inside countryInformation */
+.countryInformation h2 {
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1152px) {
+    section {
+        flex-wrap: wrap;
+    }
+
+    section>div,
+    .countryInformation {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .countryInformation {
+        margin: 0 40px;
+        margin-bottom: 20px;
+    }
+}
